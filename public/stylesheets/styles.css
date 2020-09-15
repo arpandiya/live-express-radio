@@ -1,0 +1,54 @@
+.my-nav {
+    background-color: rgb(211, 7, 75);
+    height: 65px;
+}
+
+#ul-nav {
+    color: white;
+    width: 100px;
+    margin: 0px 20px;
+    text-align: center;
+}
+
+#ul-nav:hover {
+    border-top: 1px solid white;
+    border-radius: 20px;
+}
+
+#home {
+    width: 100%;
+    height: 900px;
+    background-color: red;
+}
+
+#live {
+    width: 100%;
+    height: 900px;
+    background-color: rgb(24, 24, 53);
+}
+
+#about {
+    width: 100%;
+    height: 900px;
+    background-color: green;
+}
+
+#contact {
+    width: 100%;
+    height: 900px;
+    background-color: yellow;
+}
+
+.live {
+    margin-right: 400px;
+    z-index: +1;
+    
+}
+
+.jumbo {
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://cdn.hipwallpaper.com/i/59/47/gc4Djb.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+}

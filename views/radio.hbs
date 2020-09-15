@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+{{!-- BOOTSTRAP --}}
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>RADIO ADIRA - LIVE</title>
+</head>
+<body>
+    <nav class="nav-container">
+        <li class="nav-link" id="bars">
+            <a href="#"> <i class="fa fa-bars fa-2x"></i></a>
+        </li>
+        
+        <div class="logo"><a href="#">LIVE-nz |<span class="lead">Nepali radio 24/7</span> </a></div>
+        <ul class="nav-links">
+            
+
+            <li class="nav-link">
+                <a href="#">HOME</a>
+            </li>
+
+            <li class="nav-link">
+                <a href="#" id="live">Live</a>
+            </li>
+
+            <li class="nav-link">
+                <a href="#" id="about">About</a>
+            </li>
+
+            <li class="nav-link">
+                <a href="#" id="contact">Contact</a>
+            </li>
+
+           
+        </ul>
+    </nav>
+    
+<!-- MOBILE NAV -->
+
+<!-- <div class="overlay">
+    <li><a href="#" > HOME</a></li>
+    <li><a href="#" > Live</a></li>
+    <li><a href="#" > About</a></li>
+    <li><a href="#" > Contact</a></li>
+</div> -->
+    <!-- Slides -->
+    <section id="slides">
+        <div class="live">
+            <audio class="audio" controls autoplay>
+               <source src="http://stream.zeno.fm/b7rwd60npwzuv" type="audio/mpeg">
+            </audio> 
+        <h3 id="lead">Keep Listening Us</h3>
+        </div>
+    </section>
+    <hr style="margin: 20px 0px;">
+    <!-- Live Section -->
+    <section class="live-section" >
+            <h3 class="heading">We Are LIVE</h3>
+
+            <div id="mic">
+                <i class="fa fa-microphone fa-5x" aria-hidden="true"></i>
+            </div>
+
+            <p>We are LIVE from September 2020. </p>
+    </section>
+<hr style="margin: 20px 0px;">
+    <!-- Live Section -->
+    <section class="about-section" >
+        <h3 class="heading">About Us</h3>
+
+        <div id="mic">
+            <i class="fa fa-microphone fa-5x" aria-hidden="true"></i>
+        </div>
+
+        <p>An attempt to run a 24/7 LIVE radio station in New Zealand based in Nepali language. </p>
+    </section>
+    <hr style="margin: 20px 0px;">
+    <!-- Live Section -->
+    <section class="contact-section">
+        <h3 class="heading">Contact Us</h3>
+
+            <div id="mic">
+                <i class="fa fa-microphone fa-5x" aria-hidden="true"></i>
+            </div>
+
+            <p>If you have any suggestion to take the radio station to next level or have contents to relay from us; Please contact us at: info@radioadira.com </p>
+    </section>
+
+    <script src="/javascripts/rad.js"></script>
+</body>
+</html>
+
+<script>
+  
+
+
+    $(document).ready(function(){
+      $("#live").click(function(){
+        $("#slides").slideToggle();
+      });
+
+      $("#about").click(function(){
+        $("#slides").slideToggle(),
+        $(".live-section").slideToggle();
+      });
+
+      $("#contact").click(function(){
+        $("#slides").slideToggle();
+        $(".live-section").slideToggle();
+        $(".about-section").slideToggle();
+        
+      });
+      
+    });
+    </script>
